@@ -1,7 +1,6 @@
 from tkinter import messagebox, Tk
 import pygame
 import sys
-import colors
 import constants
 import grid_functions as grd
 import box
@@ -9,7 +8,7 @@ import box
 
 
 def dijkstra_algo(grid,path):
-    window = pygame.display.set_mode((constants.window_width, constants.window_height))  # pygame = library , display = a moudle inside that library, set_mode = a function inside that moudle                                                                 # allows us to display a window
+    window = pygame.display.set_mode((constants.window_width, constants.window_height))                                                             
     pygame.display.set_caption("dijkstra")
     queue = []
 
@@ -72,13 +71,9 @@ def dijkstra_algo(grid,path):
 
 
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_ESCAPE:
-                        begin_search = False
-                        grd.reset_board(grid, path)
-                        queue = []
+                    if event.key == pygame.K_ESCAPE:                    
+                        grd.reset_board(grid, path)                      
                         return 0;
-
-
 
 
             if begin_search:
