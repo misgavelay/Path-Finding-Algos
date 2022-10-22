@@ -1,10 +1,10 @@
 # Path-Finding-Algos
 A platform that show how distkra path finding algorithem works in a visble way
 
-#Main Menu
+##Main Menu
 At the start of the program a menu opens, (will might be used to choose between difrent algorithms.
 
-#The Grid
+##The Grid
 After the algorithem is choosed a grid is set, wich the top-right box is defined as the starting box.
 The user chooses the target box by a right-click on the box and buils a wall however he wants by a left-click on the mouse.
 Key Board:
