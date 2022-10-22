@@ -1,5 +1,6 @@
 import pygame
 import sys
+import colors
 
 
 pygame.init()        #initialize pygame
@@ -38,9 +39,9 @@ class Button():
 	# Change color while hovering over button
 	def changeColor(self, position):
 		if (position[0] in range(self.rect.left, self.rect.right) and position[1] in range(self.rect.top, self.rect.bottom)):
-			self.text = main_font.render(self.text_input, True, "green")
+			self.text = main_font.render(self.text_input, True, colors.LIGHT_GRAY)
 		else:
-			self.text = main_font.render(self.text_input, True, "white")
+			self.text = main_font.render(self.text_input, True, colors.WHITE)
 
 
 
