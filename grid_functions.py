@@ -3,7 +3,6 @@ from box import Box
 import colors
 import pygame
 def reset_board(grid,path):
-   #  queue = []
     path.clear()
     reset_grid(grid)
 
