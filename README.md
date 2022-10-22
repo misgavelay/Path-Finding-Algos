@@ -2,6 +2,7 @@
 A platform that show how distkra path finding algorithem works in a visble way
 
 ##Main Menu
+
 At the start of the program a menu opens, (will might be used to choose between difrent algorithms.
 
 ##The Grid
