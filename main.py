@@ -14,9 +14,6 @@ pygame.init()
 #C on key board clears board
 #Esc on key board sends back to menu
 
-#TODO: anble to choose start position
-#instrunctions at the begining
-# change constans to caplocks
 
 
 screen = pygame.display.set_mode((600, 600))
