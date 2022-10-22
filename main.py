@@ -1,7 +1,8 @@
 import pygame, sys
 from button import Button
-import dijkstra
-import grid_functions as grid
+from dijkstra import dijkstra_algo
+from A_star import A_star_algo
+import grid_functions as grd
 
 pygame.init()
 
@@ -12,6 +13,11 @@ pygame.init()
 #P pauses algo
 #C on key board clears board
 #Esc on key board sends back to menu
+
+#TODO: anble to choose start position
+#instrunctions at the begining
+# change constans to caplocks
+
 
 screen = pygame.display.set_mode((600, 600))
 pygame.display.set_caption("Menu")
@@ -24,12 +30,13 @@ button_surface = pygame.transform.scale(button_surface, (100, 60)) #resizes the 
 GRID = []
 PATH = []
 
-GRID = grid.build_grid()
+GRID = grd.build_grid()
+
+
 
 
 def main_menu():
     while True:
-        #screen.blit(BG, (0, 0))
         screen.fill((33,47,135))
         
         
@@ -40,17 +47,19 @@ def main_menu():
         menu_rect = menu_text.get_rect(center=(300, 100))
         
         #Define butons for main menu
-        dijkstra_button = Button(image=button_surface, x_pos=300, y_pos=200,      ###what does image = do??
-                             text_input="Dijkstra",)
+        dijkstra_button = Button(button_surface, 300, 200,
+                             "Dijkstra",)
         #options_button = Button(image=button_surface, x_pos=300, y_pos=350,
                               #  text_input="Options")
-        quit_button = Button(image=button_surface, x_pos=300, y_pos=500,
+        A_star_button = Button(button_surface, 300, 300,
+                                 "A*", )
+        quit_button = Button(image=button_surface, x_pos=300, y_pos=400,
                              text_input="Quit")
 
         screen.blit(menu_text, menu_rect)
         
         #Loop to change collors when hovering over buttons
-        for button in [dijkstra_button, quit_button]:
+        for button in [dijkstra_button,A_star_button,quit_button]:
             button.changeColor(menu_mouse_pos)
             button.update(screen)
 
@@ -61,10 +70,10 @@ def main_menu():
                 sys.exit()
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if dijkstra_button.checkForInput(menu_mouse_pos):
-                     dijkstra.dijkstra_algo(GRID,PATH)
+                     dijkstra_algo(GRID,PATH)
                      main_menu()
-                # if options_button.checkForInput(menu_mouse_pos):
-                #     options()
+                if A_star_button.checkForInput(menu_mouse_pos):
+                     A_star_algo(GRID,PATH)
                 if quit_button.checkForInput(menu_mouse_pos):
                     pygame.quit()
                     sys.exit()
