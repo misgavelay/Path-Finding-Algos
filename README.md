@@ -1,11 +1,10 @@
 # Path-Finding-Algos
 A platform that show how distkra path finding algorithem works in a visble way
 
-##Main Menu
-
+## Main Menu
 At the start of the program a menu opens, (will might be used to choose between difrent algorithms.
 
-##The Grid
+## The Grid
 After the algorithem is choosed a grid is set, wich the top-right box is defined as the starting box.
 The user chooses the target box by a right-click on the box and buils a wall however he wants by a left-click on the mouse.
 Key Board:
@@ -14,11 +13,11 @@ C - clears the grid
 P - pauses the algorithem (to un pause another clock on P ir Space)
 Esp - returns to main menu
 
-##Box
+## Box
 The box class is used to represent nodes.
 For each box the boxes from each side are defined as its neighbors with out counting the diagnol ones.
 
-##Disjktra 
+## Disjktra 
 https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Algorithm
 The implementation of the algorithem is a bit diffrent then the theoretical one.
 
