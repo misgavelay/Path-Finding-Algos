@@ -59,4 +59,5 @@ def set_start_box(grid):
     start_box = grid[0][0]
     start_box.start = True
     start_box.visited = True
+    start_box.g_score = 0
     return start_box
