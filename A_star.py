@@ -13,8 +13,7 @@ def A_star_algo(grid,path):
     queue = PriorityQueue()
     count = 0 #will be used in PriorityQueue.get() to determine between to boxes that have the same f score
     start_box = grd.set_start_box(grid)
-  #  start_set = False
-   # queue.append(start_box)
+ 
 
 
     begin_search = False
@@ -32,12 +31,6 @@ def A_star_algo(grid,path):
             elif event.type == pygame.MOUSEMOTION:  # if the type of the event is a mouse motion - keep track of where the mouse is
                 x = pygame.mouse.get_pos()[0]
                 y = pygame.mouse.get_pos()[1]
-                #Set Start
-                # if event.buttons[2]:
-                #     i = x // box.box_width
-                #     j = y // box.box_height
-                #     start_box = grd.set_start_box(grid,i,j)
-                #     start_set = True
                 # Draw Wall
                 if event.buttons[0] and not begin_search :  # if left mouse button is pressed - turn the box in to a wall
                     i = x // box.box_width
@@ -81,9 +74,7 @@ def A_star_algo(grid,path):
 
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
-                    begin_search = False
                     grd.reset_board(grid, path)
-
                     return 0;
 
         if begin_search:
