@@ -1,7 +1,7 @@
 from tkinter import messagebox, Tk
 import pygame
 import sys
-import colors    ### I want all of the colors??
+import colors
 import constants
 import grid_functions as grd
 import box
