@@ -19,7 +19,7 @@ class Button():
 		self.image = image
 		self.x_pos = x_pos
 		self.y_pos = y_pos
-		self.rect = self.image.get_rect(center=(self.x_pos, self.y_pos))  # pygame uses rect to sore and manipulate rectangle ares
+		self.rect = self.image.get_rect(center=(self.x_pos, self.y_pos))  # pygame uses rect to store and manipulate rectangle ares
 		self.text_input = text_input  # define the rect of the button to be the same rect as the image we loaded to it
 		self.text = main_font.render(self.text_input, True,"white")  # creating a surface with text on it (text, true = smooth edeges, color)
 		self.text_rect = self.text.get_rect(center=(self.x_pos, self.y_pos))  # create a rect for the text
