@@ -39,7 +39,6 @@ class Box:
         self.target = False
         self.queued = False
         self.visited = False
-        #self.neighbours = []
         self.prior = None
         self.g_score = float('inf')
         self.h_score = float('inf')
