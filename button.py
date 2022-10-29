@@ -6,7 +6,7 @@ import colors
 pygame.init()        #initialize pygame
 
 
-main_font = pygame.font.SysFont("cambria", 20)
+main_font = pygame.font.SysFont("poppins", 25)
 
 
 #Surface - pygame object to represent images
