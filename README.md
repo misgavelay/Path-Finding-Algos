@@ -3,15 +3,7 @@ A platform that show how distkra path finding algorithem works in a visble way
 
 ## Main Menu
 At the start of the program a menu opens that allows to choose between diffrent algorithems
-
-## The Grid
-After the algorithem is choosed a grid is set, wich the top-right box is defined as the starting box.
-The user chooses the target box by a right-click on the box and buils a wall however he wants by a left-click on the mouse.
-Key Board:
-Space - will start the algo (only if target box is set)
-C - clears the grid 
-P - pauses the algorithem (to un pause another clock on P ir Space)
-Esp - returns to main menu
+In Adition there is an instructions options that describes how to uses the platform
 
 ## Box
 The box class is used to represent nodes.
