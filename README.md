@@ -1,5 +1,6 @@
 # Path-Finding-Algos
-A platform that show how distkra path finding algorithem works in a visble way
+A platform that shows how diffrent path finding algorithems work in an interactive and visual way.
+For now includes A* and Disjktra algorithems
 
 ## Main Menu
 At the start of the program a menu opens that allows to choose between diffrent algorithems.
