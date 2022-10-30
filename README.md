@@ -2,7 +2,7 @@
 A platform that show how distkra path finding algorithem works in a visble way
 
 ## Main Menu
-At the start of the program a menu opens that allows to choose between diffrent algorithems
+At the start of the program a menu opens that allows to choose between diffrent algorithems.
 In Adition there is an instructions options that describes how to uses the platform
 
 ## Box
